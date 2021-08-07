@@ -10,6 +10,8 @@
     <PackageTags>gtm taghelper razor pages</PackageTags>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <AssemblyVersion>0.9.0</AssemblyVersion>
+    <FileVersion>0.9.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
