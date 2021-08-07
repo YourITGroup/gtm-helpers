@@ -8,7 +8,9 @@ on:
 
 jobs:
   build:
-
+    defaults:
+      run:
+        working-directory: src/GtmHelpers/
     runs-on: ubuntu-latest
 
     steps:
@@ -17,6 +19,7 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.x
+        
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
@@ -25,4 +28,4 @@ jobs:
       id: publish_nuget
       uses: rohith/publish-nuget@v2
       with: 
-        PROJECT_FILE_PATH: src/GtmHelpers/HtmlHelpers.csproj
+        PROJECT_FILE_PATH: src/GtmHelpers/GtmHelpers.csproj
