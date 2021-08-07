@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Copyright>2021 Your IT Group Pty Ltd</Copyright>
+    <PackageProjectUrl>https://github.com/YourITGroup/gtm-helpers</PackageProjectUrl>
+    <Description>Provides a Tag Helper to generate Google Tag Manager DataLayer scripts</Description>
+    <RepositoryUrl>https://github.com/YourITGroup/gtm-helpers</RepositoryUrl>
+    <PackageTags>gtm taghelper razor pages</PackageTags>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="HtmlHelperExtensions.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Razor" Version="2.2.0" />
+  </ItemGroup>
+
+</Project>
